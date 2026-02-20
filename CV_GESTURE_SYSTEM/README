@@ -1,1 +1,77 @@
+✋ Hand Gesture Recognition + Air Writing System
+Real-time Hand Gesture Recognition and Air Writing System built using MediaPipe, OpenCV, and Google Colab (HTML + JavaScript integration).
+This project allows users to detect hand gestures, add custom gestures dynamically, and write in the air using finger tracking.
 
+
+🚀 Project Overview
+This system uses MediaPipe Hand Tracking to detect 21 hand landmarks in real time.
+It supports:
+✋ Real-time hand landmark detection
+➕ Adding custom gestures dynamically
+🔍 Gesture recognition
+✍️ Air writing using index finger
+📷 Webcam support inside Google Colab
+
+
+🛠️ Tech Stack
+Python
+MediaPipe
+OpenCV
+NumPy
+HTML + JavaScript (inside Colab)
+Google Colab
+
+
+📂 Repository Structure
+├── CV_GESTURE_SYSTEM.ipynb   # Main project notebook
+├── README.md                 # Project documentation
+
+
+⚙️ Installation & Setup
+Step 1: Open in Google Colab
+Upload CV_GESTURE_SYSTEM.ipynb to Google Colab.
+Step 2: Install Required Libraries
+!pip install mediapipe opencv-python numpy
+Step 3: Run All Cells
+Allow browser camera permission when prompted.
+Webcam will start automatically.
+
+
+🧠 How It Works
+1️⃣ Hand Detection
+MediaPipe detects 21 hand landmarks./
+Landmark coordinates are extracted frame-by-frame.
+2️⃣ Add Gesture      
+Click "Add Gesture"
+Current landmarks are captured
+Assign a name to the gesture
+Gesture stored in memory
+3️⃣ Gesture Recognition
+Live landmarks compared with stored gestures
+If matched, gesture name displayed
+4️⃣ Air Writing
+Index finger tip tracked
+Movement drawn on virtual canvas
+Reset option available
+
+
+🎯 Features
+✔ Real-time gesture detection
+✔ Custom gesture storage
+✔ Air writing functionality
+✔ Fully runs in browser (Colab)
+✔ No external API required
+
+
+📈 Future Improvements
+Save gestures to file (JSON/database)
+Add ML classifier for better accuracy
+Multi-hand support
+Deploy as web app
+Add gesture-based system controls
+
+
+⚠️ Known Issues
+Camera permission must be allowed
+Works best in good lighting
+Single-hand support optimized
